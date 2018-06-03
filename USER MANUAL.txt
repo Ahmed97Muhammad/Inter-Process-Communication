@@ -1,0 +1,61 @@
+
+*** USER MANUAL ***
+
+This project contains three parts:
+
+1.IPC using filing:
+
+to run this you need to compile two files which are:
+
+1.filewrite.c
+2.fileread.c
+
+open terminal in linux and type the following commands:
+1. gcc -o fileuser filewrite.c  ( for compiling)
+2. ./fileuser ( for executing)
+
+Then open another another terminal and type following commands:
+1. gcc -o fileread fileread.c  ( for compiling)
+2. ./fileread  ( for executing)
+
+
+2. IPC using pipes:
+
+to run this you need to compile the following file:
+
+pipes.c
+
+open terminal in linux and type the following commands:
+1. gcc -o pipes pipes.c ( for compiling)
+2. ./pipes ( for executing)
+
+
+
+3. IPC using pipes by mkfifo command:
+
+to run this you need to compile two files which are:
+
+1.mkfiforead.c
+2.mkfiforwrite.c
+
+open terminal in linux and type the following commands:
+1. gcc -o mkforead mkforead.c  ( for compiling)
+2. ./mkforead ( for executing)
+
+Then open another another terminal and type following commands:
+1. gcc -o mkfiforwrite.c mkfiforwrite.c  ( for compiling)
+2. mkfiforwrite.c  ( for executing)
+
+
+4. IPC using semaphores:
+
+to run this you need to compile the following file:
+
+semaphores.c
+open terminal in linux and type the following commands:
+1. gcc -o semaphores -lpthread semaphores.c
+2. ./semaphores
+
+
+IMPORTANT NOTE :
+the two .txt files numbers.txt and shared.txt must be in the same folder with other .c files
